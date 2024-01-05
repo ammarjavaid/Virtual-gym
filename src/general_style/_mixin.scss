@@ -1,0 +1,9 @@
+@mixin button {
+  background-color: $thirdColor;
+  height: 45px;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  color: $whiteColor;
+  cursor: pointer;
+}

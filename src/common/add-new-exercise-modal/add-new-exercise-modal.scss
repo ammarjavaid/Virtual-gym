@@ -1,0 +1,602 @@
+@import "../../general_style/variable";
+
+.exercise-inputs-modal {
+  .exercise-inputs {
+    .form-wrapper {
+      width: 100%;
+      margin-bottom: 1rem;
+      margin-left: 0;
+      margin-top: 1rem;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-left: 0;
+      }
+      .input-group {
+        margin: 6px 0;
+        display: flex;
+        flex-direction: column;
+        label {
+          font-family: $fontFamily;
+          font-size: 12px;
+          margin-top: 5px;
+          color: #000;
+          margin-bottom: 4px;
+          margin-left: 4px;
+        }
+        input {
+          background-color: #f2f2f2;
+          border: none !important;
+          padding: 10px 15px !important;
+          font-size: 11px;
+          font-family: $fontFamily;
+          border-radius: 7px;
+          color: #000;
+          width: 100%;
+          &::placeholder {
+            color: #bdbdbd !important;
+            font-weight: 400;
+            font-family: $fontFamily;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .error_email {
+          color: red;
+          font-size: 12px;
+          padding-left: 5px;
+          font-family: $fontFamily;
+        }
+
+        textarea {
+          background-color: #f2f2f2;
+          border: none !important;
+          padding: 10px 15px !important;
+          font-size: 11px;
+          font-family: $fontFamily;
+          color: #000;
+          border-radius: 7px;
+          &::placeholder {
+            color: #bdbdbd !important;
+            font-weight: 400;
+            font-family: $fontFamily;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .min {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+        .rest-time {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin-top: 20px;
+          color: #000;
+        }
+
+        .ant-select {
+          width: 100% !important;
+          .ant-select-selector {
+            background-color: #f2f2f2 !important;
+            border: none !important;
+            color: $whiteColor !important;
+            padding: 2px 15px !important;
+            font-family: $fontFamily !important;
+            height: 35px !important;
+            border-radius: 7px;
+            .ant-select-selection-item {
+              font-family: $fontFamily !important;
+              color: #bdbdbd !important;
+              font-size: 11px !important;
+              width: 100% !important;
+            }
+          }
+          .ant-select-arrow {
+            color: $whiteColor !important;
+          }
+        }
+
+        .ant-picker {
+          width: 100% !important;
+          background-color: $secndaryColor !important;
+          border: none !important;
+          height: 35px !important;
+          border-radius: 7px;
+          .ant-picker-input {
+            color: #bdbdbd !important;
+            input {
+              color: $whiteColor !important;
+              font-family: $fontFamily !important;
+              &::placeholder {
+                color: $secndaryColor !important;
+                font-family: $fontFamily;
+                font-size: 11px;
+              }
+            }
+          }
+          .ant-picker-suffix {
+            color: #bdbdbd !important;
+          }
+        }
+        .ant-form-item {
+          margin: 0;
+        }
+        .time {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .hr {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #bdbdbd;
+            font-family: $fontFamily;
+            font-weight: 600;
+            .ant-input-number {
+              width: 100% !important;
+              background-color: $secndaryColor;
+              border: none;
+              input {
+                color: $whiteColor;
+                font-size: 11px;
+                height: 35px;
+                &::placeholder {
+                  color: $whiteColor;
+                }
+              }
+            }
+          }
+        }
+      }
+      .video-attach {
+        width: 50%;
+        overflow: hidden;
+
+        .file_input {
+          position: relative;
+          background: $secndaryColor;
+          border-radius: 7px;
+          height: 35px;
+          margin-top: -4px;
+          #fileInput {
+            font-size: 0;
+          }
+          input {
+            display: none;
+            border: none;
+            height: 40px;
+            padding-left: 1rem;
+            border-radius: 10px;
+            color: #bdbdbd;
+            width: 100%;
+          }
+          .label {
+            display: flex;
+            width: 10px;
+            padding-right: 50px !important;
+            align-items: center;
+            border: none;
+            padding-left: 1rem;
+            border-radius: 10px;
+            color: $secndaryColor;
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+            p {
+              color: $secndaryColor;
+              font-family: $fontFamily;
+              font-size: 10px;
+              padding-top: 12px;
+              width: 100%;
+              overflow: hidden;
+            }
+          }
+          .img_gal {
+            position: absolute;
+            z-index: 1;
+            top: 9px;
+            right: 10px;
+            width: 16px;
+          }
+          .optional {
+            position: absolute;
+            right: 12px;
+            top: 9px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.5);
+          }
+          .error_email {
+            color: red;
+            font-size: 12px;
+            padding-left: 10px;
+          }
+        }
+      }
+
+      .notes {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 10px;
+        label {
+          font-family: $fontFamily;
+          color: $whiteColor;
+          font-size: 13px;
+          padding-left: 7px;
+        }
+        textarea {
+          background-color: #f2f2f2;
+          border: none !important;
+          padding: 10px 15px !important;
+          font-size: 11px;
+          color: #bdbdbd;
+          font-family: $fontFamily;
+          border-radius: 7px;
+          &::placeholder {
+            color: #bdbdbd !important;
+            font-weight: 400;
+            font-family: $fontFamily;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        .error_email {
+          color: red;
+          font-size: 12px;
+          padding-left: 10px;
+          font-family: $fontFamily;
+        }
+      }
+
+      .input-group-attach {
+        .video-link-attach {
+          display: flex;
+          width: 100%;
+          gap: 10px;
+          .video-link {
+            width: 50%;
+            label {
+              font-family: $fontFamily;
+              color: #000;
+              font-size: 12px;
+              margin-top: 5px;
+              margin-bottom: -3px;
+              margin-left: 4px;
+            }
+            input {
+              width: 100%;
+              background-color: #f2f2f2;
+              height: 35px;
+              border: none;
+              padding: 0 10px;
+              border-radius: 6px;
+              color: $whiteColor;
+              font-family: $fontFamily;
+              font-size: 11px;
+              &::placeholder {
+                color: #bdbdbd;
+                font-family: $fontFamily;
+                font-size: 10px;
+              }
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+          .error_email {
+            color: red;
+            font-size: 12px;
+            padding-left: 5px;
+            font-family: $fontFamily;
+          }
+          .video-attach {
+            width: 50%;
+
+            label {
+              font-family: $fontFamily;
+              color: $whiteColor;
+              font-size: 12px;
+              margin-top: 5px;
+              margin-bottom: -3px;
+              margin-left: 4px;
+            }
+
+            .file_input {
+              position: relative;
+              background: #f2f2f2;
+              border-radius: 7px;
+              height: 35px;
+              margin-top: -5px;
+              #fileInput {
+                font-size: 0;
+              }
+              input {
+                display: none;
+                border: none;
+                height: 40px;
+                padding-left: 1rem;
+                border-radius: 10px;
+                color: white;
+                width: 100%;
+              }
+              label {
+                display: flex;
+                align-items: center;
+                border: none;
+                padding-left: 1rem;
+                border-radius: 10px;
+                color: white;
+                width: 100%;
+                cursor: pointer;
+                p {
+                  color: #bdbdbd;
+                  font-family: $fontFamily;
+                  font-size: 10px;
+                  padding-top: 10.5px;
+                }
+              }
+              .img_gal {
+                position: absolute;
+                z-index: 1;
+                top: 9px;
+                right: 10px;
+                width: 16px;
+              }
+              .optional {
+                position: absolute;
+                right: 12px;
+                top: 9px;
+                font-size: 13px;
+                color: rgba(255, 255, 255, 0.5);
+              }
+              .error_email {
+                color: red;
+                font-size: 12px;
+                padding-left: 10px;
+              }
+            }
+          }
+
+          .or {
+            font-family: $fontFamily;
+            color: #bdbdbd;
+            padding-top: 28px;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .increment-decrement {
+        position: relative;
+        .plus-minus {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin-top: 8px;
+          margin-right: 10px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          img {
+            width: 15px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .site-settings {
+        margin-top: 20px;
+        color: #000;
+
+        .numbring {
+          color: #000;
+          font-family: $fontFamily;
+          font-size: 12px;
+        }
+        .select {
+          width: 100% !important;
+          margin-top: 5px;
+          label {
+            font-family: $fontFamily;
+            color: #000;
+            font-size: 13px;
+            margin-left: 4px;
+            margin-bottom: 4px;
+          }
+          .ant-select {
+            width: 100% !important;
+            ::placeholder {
+              color: red !important;
+            }
+
+            .ant-select-selector {
+              background-color: #f2f2f2;
+              color: #bdbdbd !important;
+              border: none !important;
+              font-family: $fontFamily !important;
+              margin-top: 3px;
+              padding: 2px 11px !important;
+            }
+            .ant-select-arrow {
+              color: #bdbdbd !important;
+            }
+            .ant-select-selector {
+              ::placeholder {
+                color: aqua !important;
+              }
+              input {
+                color: green !important;
+              }
+              .ant-select-selection-search {
+                color: red !important;
+              }
+            }
+          }
+        }
+
+        .site-settings-one {
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          color: $whiteColor;
+          gap: 10px;
+          width: 100%;
+
+          .reps {
+            width: 50%;
+          }
+          .lbs {
+            width: 50%;
+          }
+        }
+        .site-settings-one-stop-watch {
+          display: flex;
+          // align-items: center;
+          .rest-time {
+            font-size: 11px;
+            color: #000;
+            font-family: $fontFamily;
+            width: 15%;
+            margin-top: 18px;
+            @media screen and (max-width: 370px) {
+              width: 20%;
+            }
+          }
+          .timer {
+            background-color: $secndaryColor;
+            padding: 4px 10px;
+            border-radius: 7px;
+            width: 85%;
+          }
+          .ant-statistic .ant-statistic-content {
+            color: #bdbdbd !important;
+            font-size: 10px;
+          }
+          .ant-statistic-content-value {
+            font-family: $fontFamily !important;
+            font-weight: 400;
+          }
+
+          .error_email {
+            color: red;
+            font-size: 12px;
+            padding-left: 5px;
+            font-family: $fontFamily;
+          }
+        }
+
+        .ant-row {
+          display: flex !important;
+          flex-direction: column !important;
+        }
+        .ant-form-item .ant-form-item-label {
+          text-align: left;
+        }
+        .ant-form-item .ant-form-item-label > label {
+          color: #bdbdbd !important;
+          font-family: $fontFamily !important;
+          font-weight: 600;
+        }
+      }
+
+      .add-cancel-btns {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        justify-content: end;
+        margin-top: 1rem;
+        .cancel {
+          color: $redColor;
+          font-family: $fontFamily;
+          font-size: 12px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+        .add-exercise {
+          background-color: $thirdColor;
+          font-family: $fontFamily;
+          color: $whiteColor;
+          padding: 8px 30px;
+          font-size: 12px;
+          border-radius: 6px;
+          cursor: pointer;
+          font-weight: 600;
+        }
+      }
+
+      .site-setting-toggle {
+        display: flex;
+        gap: 10px;
+        margin-top: 1rem;
+        h2 {
+          color: #000;
+          font-weight: 400;
+          font-size: 16px;
+        }
+        .toggleShow {
+          cursor: pointer;
+          transform: rotate(90deg);
+        }
+        .togglehide {
+          cursor: pointer;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+.ant-picker-dropdown .ant-picker-panel-container .ant-picker-panel {
+  background-color: $secndaryColor !important;
+}
+
+.ant-picker-content {
+  .ant-picker-time-panel-cell-inner {
+    color: $whiteColor !important;
+    font-family: $fontFamily !important;
+  }
+}
+.ant-picker-footer {
+  .ant-picker-now {
+    a {
+      color: $whiteColor !important;
+      font-family: $fontFamily !important;
+    }
+  }
+}
+
+.ant-picker-ok {
+  span {
+    color: $whiteColor !important;
+    font-family: $fontFamily;
+  }
+}
+
+.ant-picker-dropdown
+  .ant-picker-time-panel-column
+  > li.ant-picker-time-panel-cell-selected
+  .ant-picker-time-panel-cell-inner {
+  background-color: $primaryColor !important;
+}
+
+.ant-select .ant-select-selector {
+  ::placeholder {
+    color: #bdbdbd !important;
+  }
+}
+
+.add-exercise-btn {
+  background-color: $thirdColor !important;
+  color: $whiteColor;
+  font-size: 12px !important;
+  font-family: $fontFamily !important;
+  font-weight: 500 !important;
+}

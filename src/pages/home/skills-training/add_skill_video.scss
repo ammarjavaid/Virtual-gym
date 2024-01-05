@@ -1,0 +1,228 @@
+@import "../../../general_style/variable";
+
+.add-skill-video {
+  margin-top: 1rem;
+  margin-left: 33px;
+  //   max-width: 50%;
+  max-width: 500px;
+  @media screen and (max-width: 540px) {
+    width: 100%;
+    margin-left: 0;
+  }
+  .input-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 1rem;
+
+    label {
+      font-family: $fontFamily;
+      color: $whiteColor;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: -3px;
+      margin-left: 4px;
+    }
+
+    input {
+      background-color: $secndaryColor;
+      height: 35px;
+      border: none;
+      padding: 0 10px;
+      border-radius: 6px;
+      color: $whiteColor;
+      font-family: $fontFamily;
+      font-size: 11px;
+      &::placeholder {
+        color: #bdbdbd;
+        font-family: $fontFamily;
+        font-size: 10px;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      background-color: $secndaryColor;
+      border: none;
+      padding: 10px 10px;
+      border-radius: 6px;
+      color: $whiteColor;
+      font-family: $fontFamily;
+      font-size: 11px;
+      max-width: 100%;
+      &::placeholder {
+        color: #bdbdbd;
+        font-family: $fontFamily;
+        font-size: 10px;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .video-link-attach {
+      display: flex;
+      width: 100%;
+      gap: 10px;
+      .video-link {
+        width: 50%;
+        input {
+          width: 100%;
+        }
+      }
+      .video-attach {
+        width: 50%;
+        overflow: hidden;
+
+        .file_input {
+          position: relative;
+          background: $secndaryColor;
+          border-radius: 7px;
+          height: 35px;
+          margin-top: -4px;
+          #fileInput {
+            font-size: 0;
+          }
+          input {
+            display: none;
+            border: none;
+            height: 40px;
+            padding-left: 1rem;
+            border-radius: 10px;
+            color: white;
+            width: 100%;
+          }
+          .label {
+            // margin-top: 2rem;
+            display: flex;
+            width: 10px;
+            padding-right: 50px !important;
+            align-items: center;
+            border: none;
+            // height: 40px;
+            padding-left: 1rem;
+            border-radius: 10px;
+            color: white;
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+            p {
+              color: #bdbdbd;
+              font-family: $fontFamily;
+              font-size: 10px;
+              padding-top: 12px;
+              width: 100%;
+              overflow: hidden;
+            }
+          }
+          .img_gal {
+            position: absolute;
+            z-index: 1;
+            top: 9px;
+            right: 10px;
+            width: 16px;
+          }
+          .optional {
+            position: absolute;
+            right: 12px;
+            top: 9px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.5);
+          }
+          .error_email {
+            color: red;
+            font-size: 12px;
+            padding-left: 10px;
+          }
+        }
+      }
+
+      .or {
+        font-family: $fontFamily;
+        color: #bdbdbd;
+        padding-top: 28px;
+        font-size: 14px;
+      }
+    }
+
+    .input-group {
+      .ant-input {
+        background-color: $secndaryColor;
+        border: none !important;
+        padding: 10px 15px !important;
+        font-size: 11px;
+        color: $whiteColor;
+        border-radius: 7px;
+        &::placeholder {
+          color: #bdbdbd !important;
+          font-weight: 400;
+        }
+      }
+
+      .ant-select {
+        width: 100% !important;
+        .ant-select-selector {
+          background-color: $secndaryColor !important;
+          border: none !important;
+          color: $whiteColor !important;
+          padding: 2px 15px !important;
+          font-family: $fontFamily !important;
+          height: 35px !important;
+          border-radius: 7px;
+          .ant-select-selection-item {
+            font-family: $fontFamily !important;
+            color: #bdbdbd !important;
+            font-size: 11px !important;
+            width: 100% !important;
+          }
+        }
+        .ant-select-arrow {
+          color: $whiteColor !important;
+        }
+      }
+
+      .ant-form-item {
+        margin: 0;
+      }
+    }
+
+    .error_email {
+      color: $redColor;
+      font-family: $fontFamily;
+      font-size: 11px;
+      margin-top: -7px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 1.5rem;
+    gap: 20px;
+    .cancel {
+      color: $redColor;
+      font-family: $fontFamily;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .add-client {
+      background-color: $thirdColor;
+      font-family: $fontFamily;
+      color: $whiteColor;
+      font-size: 12px;
+      height: 34px;
+      display: flex;
+      border: none;
+      align-items: center;
+      padding: 0 35px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}

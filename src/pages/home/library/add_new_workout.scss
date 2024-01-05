@@ -1,0 +1,181 @@
+@import "../../../general_style/variable";
+
+.add-new-workout {
+  margin-top: 1rem;
+  margin-left: 33px;
+  max-width: 500px;
+  @media screen and (max-width: 540px) {
+    width: 100%;
+    margin-left: 0;
+  }
+  .input-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 1rem;
+    input {
+      background-color: $secndaryColor;
+      height: 35px;
+      border: none;
+      padding: 0 10px;
+      border-radius: 6px;
+      color: $whiteColor;
+      font-family: $fontFamily;
+      font-size: 11px;
+      &::placeholder {
+        color: #bdbdbd;
+        font-family: $fontFamily;
+        font-size: 10px;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      background-color: $secndaryColor;
+      border: none;
+      padding: 10px 10px;
+      border-radius: 6px;
+      color: $whiteColor;
+      font-family: $fontFamily;
+      font-size: 11px;
+      max-width: 100%;
+      &::placeholder {
+        color: #bdbdbd;
+        font-family: $fontFamily;
+        font-size: 10px;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .input-group {
+      .section-name {
+        color: $whiteColor;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+      .ant-input {
+        background-color: $secndaryColor;
+        border: none !important;
+        padding: 10px 15px !important;
+        font-size: 11px;
+        color: $whiteColor;
+        border-radius: 7px;
+        &::placeholder {
+          color: #bdbdbd !important;
+          font-weight: 400;
+        }
+      }
+
+      .ant-select {
+        width: 100% !important;
+        .ant-select-selector {
+          background-color: $secndaryColor !important;
+          border: none !important;
+          color: $whiteColor !important;
+          padding: 2px 15px !important;
+          font-family: $fontFamily !important;
+          height: 35px !important;
+          border-radius: 7px;
+          .ant-select-selection-item {
+            font-family: $fontFamily !important;
+            color: #bdbdbd !important;
+            font-size: 11px !important;
+            width: 100% !important;
+          }
+        }
+        .ant-select-arrow {
+          color: $whiteColor !important;
+        }
+      }
+
+      .ant-form-item {
+        margin: 0;
+      }
+
+      .edit-new-exercise {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        .edit-new-exercise-left {
+          display: flex;
+          gap: 5px;
+          background-color: $secndaryColor;
+          padding: 7px 12px;
+          border-radius: 7px;
+          align-items: center;
+          p {
+            color: $whiteColor;
+            font-family: $fontFamily;
+            font-size: 11px;
+            font-weight: 600;
+          }
+          .cross {
+            width: 7px;
+            cursor: pointer;
+            margin-top: 2px;
+          }
+          .pencil {
+            width: 9px;
+            margin-top: 2px;
+            cursor: pointer;
+          }
+        }
+        .edit-new-exercise-right {
+          background-color: $whiteColor;
+          padding: 7px 12px;
+          border-radius: 7px;
+          p {
+            color: #333333;
+            font-family: $fontFamily;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .error_email {
+      color: $redColor;
+      font-family: $fontFamily;
+      font-size: 11px;
+      margin-top: -7px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 1.5rem;
+    gap: 20px;
+    .cancel {
+      color: $redColor;
+      font-family: $fontFamily;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .add-client {
+      background-color: $thirdColor;
+      font-family: $fontFamily;
+      color: $whiteColor;
+      font-size: 12px;
+      height: 34px;
+      display: flex;
+      border: none;
+      align-items: center;
+      padding: 0 35px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,375 @@
+@import "../../../general_style/variable";
+
+.dashboard {
+  .dashboard-overview {
+    margin-bottom: 2rem;
+    h3 {
+      font-family: $fontFamily;
+      color: $whiteColor;
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+
+    .overview {
+      background-color: $primaryColor;
+      display: flex;
+      width: 100%;
+      height: 100px;
+      align-items: center;
+      border-radius: 6px;
+
+      @media screen and (max-width: 540px) {
+        gap: 10px;
+        padding: 0 10px;
+      }
+
+      .overview-left {
+        width: 50%;
+        text-align: center;
+        border-right: 1px solid #bdbdbd;
+        h1 {
+          font-family: $fontFamily;
+          font-size: 28px;
+          color: $whiteColor;
+          padding-bottom: 5px;
+          @media screen and (max-width: 540px) {
+            font-size: 22px;
+          }
+          img {
+            padding-left: 5px;
+          }
+        }
+        p {
+          font-family: $fontFamily;
+          font-size: 12px;
+          color: #bdbdbd;
+          @media screen and (max-width: 540px) {
+            font-size: 10px;
+          }
+        }
+      }
+      .overview-center {
+        width: 50%;
+        text-align: center;
+        border-right: 1px solid #bdbdbd;
+        h1 {
+          font-family: $fontFamily;
+          font-size: 28px;
+          color: $whiteColor;
+          padding-bottom: 5px;
+          @media screen and (max-width: 540px) {
+            font-size: 22px;
+          }
+          img {
+            padding-left: 5px;
+          }
+        }
+        p {
+          font-family: $fontFamily;
+          font-size: 12px;
+          color: #bdbdbd;
+          @media screen and (max-width: 540px) {
+            font-size: 10px;
+          }
+        }
+      }
+      .overview-right {
+        width: 50%;
+        text-align: center;
+        h1 {
+          font-family: $fontFamily;
+          font-size: 28px;
+          color: $whiteColor;
+          padding-bottom: 5px;
+          @media screen and (max-width: 540px) {
+            font-size: 22px;
+          }
+          img {
+            padding-left: 5px;
+          }
+        }
+        p {
+          font-family: $fontFamily;
+          font-size: 12px;
+          color: #bdbdbd;
+          @media screen and (max-width: 540px) {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .input-group {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 20px;
+    input {
+      width: 80%;
+      padding: 10px 12px;
+      background-color: $secndaryColor;
+      border: none;
+      color: #ffff;
+      font-family: $fontFamily;
+      border-radius: 4px;
+      &::placeholder {
+        font-family: $fontFamily;
+        color: #ffff;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      width: 20%;
+      background-color: $thirdColor;
+      border: none;
+      color: #ffff;
+      font-family: $fontFamily;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .dashboard-activity {
+    h3 {
+      font-family: $fontFamily;
+      color: $whiteColor;
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+
+    .chart {
+      .dashboard-charts {
+        background-color: $secndaryColor;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .dashboard-clients {
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 20px;
+
+    @media screen and (max-width: 968px) {
+      flex-direction: column;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .dashboard-clients-left {
+      width: 50%;
+      height: 40vh;
+      margin-top: 14px;
+      @media screen and (max-width: 968px) {
+        width: 100%;
+      }
+      .head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .clients {
+          font-family: $fontFamily;
+          color: $whiteColor;
+          font-size: 16px;
+        }
+        .acitive-inactive {
+          display: flex;
+          gap: 30px;
+          position: relative;
+          .active {
+            font-size: 13px;
+            font-family: $fontFamily;
+            color: $whiteColor;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              top: 3px;
+              left: -15px;
+              background-color: #16cc66;
+              border-radius: 50%;
+            }
+          }
+          .inactive {
+            font-size: 13px;
+            font-family: $fontFamily;
+            color: $whiteColor;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              top: 3px;
+              left: 110px;
+              background-color: #ea4237;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+      .chart {
+        height: 100%;
+        background-color: $secndaryColor;
+        padding: 20px 10px;
+        border-radius: 6px;
+      }
+    }
+    .dashboard-clients-right {
+      width: 50%;
+      @media screen and (max-width: 968px) {
+        width: 100%;
+        margin-top: 3rem;
+      }
+
+      .buttons-desktop-view {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        .buttons-mobile {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          .table-head-btn {
+            background-color: #828282;
+            font-family: $fontFamily;
+            color: $whiteColor;
+            border: none;
+            height: 30px;
+            padding: 0 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            @media screen and (max-width: 768px) {
+              width: 90%;
+              margin: 3px 0px;
+            }
+          }
+          .activeTab {
+            background-color: rgba(247, 147, 0, 0.1);
+            color: $thirdColor;
+          }
+        }
+      }
+
+      .table {
+        margin-top: 8px;
+
+        .ant-table {
+          background: none !important;
+        }
+
+        .ant-table-wrapper .ant-table-tbody > tr.ant-table-placeholder {
+          background: transparent !important;
+        }
+
+        .ant-table-wrapper .ant-table-thead > tr > th {
+          border-bottom: none !important;
+        }
+
+        .ant-table-wrapper .ant-table-thead > tr > th {
+          background-color: $secndaryColor !important;
+          color: $whiteColor !important;
+          font-family: $fontFamily !important;
+          font-size: 12px !important;
+        }
+
+        .ant-table-tbody {
+          background-color: $primaryColor !important;
+          .ant-table-row > td a {
+            color: $whiteColor !important;
+            font-family: $fontFamily !important;
+            font-size: 11px;
+          }
+          .ant-table-cell {
+            border: none !important;
+          }
+          .ant-table-row > td {
+            color: $whiteColor !important;
+            font-family: $fontFamily !important;
+            font-size: 11px;
+            border: none !important;
+          }
+          .ant-table-cell .ant-table-cell-row-hover {
+            background: none !important;
+          }
+        }
+
+        .ant-table-wrapper .ant-table-tbody > tr > td {
+          transition: 0 !important;
+        }
+        .ant-space {
+          display: flex !important;
+          align-items: center !important;
+        }
+        .ant-switch.ant-switch-checked {
+          background-color: $thirdColor !important;
+        }
+        .ant-switch.ant-switch-small {
+          // min-width: 24px !important;
+          height: 15px !important;
+        }
+        .ant-switch.ant-switch-small .ant-switch-handle {
+          width: 8px !important;
+          height: 8px !important;
+          margin-top: 1px !important;
+        }
+        .ant-switch.ant-switch-small.ant-switch-checked .ant-switch-handle {
+          inset-inline-start: calc(100% - 12px) !important;
+          //   margin-top: 1px !important;
+        }
+        .ant-space-item {
+          margin-top: 6px !important;
+        }
+
+        .ant-table-cell {
+          &::before {
+            display: none !important;
+          }
+        }
+
+        .action-type {
+          display: flex !important;
+          align-items: center !important;
+          gap: 10px;
+          img {
+            cursor: pointer;
+          }
+        }
+        .ant-table-wrapper .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+          background-color: $secndaryColor !important;
+        }
+
+        .ant-table-wrapper .ant-table-pagination.ant-pagination {
+          display: none !important;
+        }
+
+        .see-all {
+          background-color: $primaryColor;
+          font-family: $fontFamily;
+          text-align: center;
+          padding: 12px 0;
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px;
+          color: $thirdColor;
+          cursor: pointer;
+        }
+      }
+      .ant-pagination {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        background-color: $primaryColor !important;
+        border-radius: 0 !important;
+        border-bottom-left-radius: 8px !important;
+        border-bottom-right-radius: 8px !important;
+      }
+    }
+  }
+}

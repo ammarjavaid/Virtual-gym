@@ -1,0 +1,136 @@
+@import "../../../general_style/variable";
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-placeholder {
+  background: transparent !important;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-placeholder:hover > td {
+  background: transparent !important;
+}
+
+.video-link-attach {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  .video-link {
+    width: 50%;
+    input {
+      width: 100%;
+      background-color: $secndaryColor;
+      border: none;
+      padding: 10px 10px;
+      border-radius: 6px;
+      color: $whiteColor;
+      font-family: $fontFamily;
+      font-size: 11px;
+      max-width: 100%;
+      &::placeholder {
+        color: #bdbdbd;
+        font-family: $fontFamily;
+        font-size: 10px;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .video-attach {
+    width: 50%;
+
+    .file_input {
+      position: relative;
+      background: $secndaryColor;
+      border-radius: 7px;
+      height: 35px;
+      margin-top: -5px;
+      #fileInput {
+        font-size: 0;
+      }
+      input {
+        display: none;
+        border: none;
+        height: 40px;
+        padding-left: 1rem;
+        border-radius: 10px;
+        color: white;
+        width: 100%;
+      }
+      label {
+        // margin-top: 2rem;
+        display: flex;
+        // padding-left: 50px !important;
+        align-items: center;
+        // background: #3b3b3c;
+        border: none;
+        // height: 40px;
+        padding-left: 1rem;
+        border-radius: 10px;
+        color: white;
+        width: 100%;
+        cursor: pointer;
+        p {
+          color: #bdbdbd;
+          font-family: $fontFamily;
+          font-size: 10px;
+          padding-top: 10.5px;
+        }
+      }
+      .img_gal {
+        position: absolute;
+        z-index: 1;
+        top: 9px;
+        right: 10px;
+        width: 16px;
+      }
+      .optional {
+        position: absolute;
+        right: 12px;
+        top: 9px;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .error_email {
+        color: red;
+        font-size: 12px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .notes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;
+    label {
+      font-family: $fontFamily;
+      color: $whiteColor;
+      font-size: 13px;
+      padding-left: 7px;
+    }
+    textarea {
+      background-color: $secndaryColor;
+      border: none !important;
+      padding: 10px 15px !important;
+      font-size: 11px;
+      color: $whiteColor;
+      font-family: $fontFamily;
+      border-radius: 7px;
+      &::placeholder {
+        color: #bdbdbd !important;
+        font-weight: 400;
+        font-family: $fontFamily;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .or {
+    font-family: $fontFamily;
+    color: #bdbdbd;
+    padding-top: 28px;
+    font-size: 14px;
+  }
+}

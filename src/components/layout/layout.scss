@@ -1,0 +1,29 @@
+.layout {
+  padding: 0px 20px 20px 20px !important;
+  max-width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  gap: 1.5rem;
+  @media screen and (max-width: 768px) {
+    gap: 0;
+  }
+  .sidebar_layout {
+    width: 20%;
+    // @media screen and (max-width: 1290px) {
+    //   width: 25%;
+    // }
+    @media screen and (max-width: 768px) {
+      width: 0%;
+    }
+  }
+  .content {
+    width: 80%;
+    // @media screen and (max-width: 1290px) {
+    //   width: 75%;
+    // }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

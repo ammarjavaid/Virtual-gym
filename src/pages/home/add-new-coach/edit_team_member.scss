@@ -1,0 +1,140 @@
+@import "../../../general_style/variable";
+
+.edit-form {
+  width: 55%;
+
+  .input-group {
+    margin: 6px 0;
+
+    label {
+      font-family: $fontFamily;
+      color: $whiteColor;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: -3px;
+      margin-left: 4px;
+    }
+
+    input {
+      background-color: $secndaryColor;
+      border: none !important;
+      padding: 10px 8px !important;
+      font-size: 11px;
+      color: $whiteColor;
+      width: 100%;
+      border-radius: 7px;
+      font-family: $fontFamily;
+      &::placeholder {
+        color: #bdbdbd !important;
+        font-weight: 400;
+        font-family: $fontFamily;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    textarea {
+      background-color: $secndaryColor;
+      border: none !important;
+      padding: 10px 8px !important;
+      font-size: 11px;
+      color: $whiteColor;
+      width: 100%;
+      font-family: $fontFamily;
+      border-radius: 7px;
+      &::placeholder {
+        color: #bdbdbd !important;
+        font-weight: 400;
+        font-family: $fontFamily;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .error_email {
+      color: red;
+      font-size: 12px;
+      padding-left: 5px;
+      font-family: $fontFamily;
+    }
+
+    .disable-email {
+      background-color: #3d3b3b;
+    }
+
+    .ant-select {
+      width: 100% !important;
+      .ant-select-selector {
+        background-color: $secndaryColor !important;
+        border: none !important;
+        color: $whiteColor !important;
+        padding: 2px 15px !important;
+        font-family: $fontFamily !important;
+        height: 35px !important;
+        border-radius: 7px;
+        .ant-select-selection-item {
+          font-family: $fontFamily !important;
+          color: #bdbdbd !important;
+          font-size: 11px !important;
+          width: 100% !important;
+        }
+      }
+      .ant-select-arrow {
+        color: $whiteColor !important;
+      }
+    }
+
+    .ant-picker {
+      width: 100% !important;
+      background-color: $secndaryColor !important;
+      border: none !important;
+      height: 35px !important;
+      border-radius: 7px;
+      .ant-picker-input {
+        color: #bdbdbd !important;
+        input {
+          color: $whiteColor !important;
+          font-family: $fontFamily !important;
+          &::placeholder {
+            color: #bdbdbd !important;
+            font-family: $fontFamily;
+            font-size: 11px;
+          }
+        }
+      }
+      .ant-picker-suffix {
+        color: #bdbdbd !important;
+      }
+    }
+    .ant-form-item {
+      margin: 0;
+    }
+  }
+
+  .add-team-cancel-btns {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    justify-content: end;
+    margin-top: 1rem;
+    .cancel {
+      color: $redColor;
+      font-family: $fontFamily;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .add-exercise {
+      background-color: $thirdColor;
+      font-family: $fontFamily;
+      color: $whiteColor;
+      padding: 8px 30px;
+      font-size: 12px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}

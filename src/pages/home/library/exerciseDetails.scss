@@ -1,0 +1,271 @@
+@import "../../../general_style/variable";
+
+.exercise-details {
+  width: 50%;
+  margin-bottom: 2rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  img {
+    margin: 20px 0;
+  }
+  .exercise-details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .exercise-name {
+      background-color: $secndaryColor;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid #4f4f4f;
+      background: transparent;
+      .exercise-name-left {
+        font-family: $fontFamily;
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .exercise-name-right {
+        font-family: $fontFamily;
+        font-size: 13px;
+        color: $whiteColor;
+      }
+    }
+    .exercise-category {
+      background-color: $secndaryColor;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid #4f4f4f;
+      background: transparent;
+      .exercise-name-left {
+        font-family: $fontFamily;
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .exercise-name-right {
+        font-family: $fontFamily;
+        font-size: 13px;
+        color: $whiteColor;
+      }
+    }
+    .exercise-time {
+      background-color: $secndaryColor;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid #4f4f4f;
+      background: transparent;
+      .exercise-name-left {
+        font-family: $fontFamily;
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .exercise-name-right {
+        font-family: $fontFamily;
+        font-size: 13px;
+        color: $whiteColor;
+      }
+    }
+    .exercise-description {
+      background-color: $secndaryColor;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid #4f4f4f;
+      background: transparent;
+      .exercise-name-left {
+        font-family: $fontFamily;
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .exercise-name-right {
+        font-family: $fontFamily;
+        font-size: 12px;
+        color: $whiteColor;
+        line-height: 17px;
+      }
+    }
+    .exercise-sets {
+      background-color: $secndaryColor;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid #4f4f4f;
+      background: transparent;
+      .exercise-name-left {
+        font-family: $fontFamily;
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .exercise-name-right {
+        font-family: $fontFamily;
+        font-size: 13px;
+        color: $whiteColor;
+      }
+    }
+  }
+  .set-one {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-family: $fontFamily;
+      color: #bdbdbd;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .set-one-content {
+      width: 90%;
+      display: flex;
+      gap: 10px;
+      @media screen and (max-width: 540px) {
+        width: 88%;
+      }
+      .set-one-left {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        border: 1px solid #4f4f4f;
+        padding: 10px 20px;
+        border-radius: 6px;
+        .sub-left {
+          font-size: 12px;
+          font-weight: 700;
+          color: #bdbdbd;
+          font-family: $fontFamily;
+        }
+        .sub-right {
+          font-size: 12px;
+          color: $whiteColor;
+          font-family: $fontFamily;
+        }
+      }
+      .set-one-right {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        border: 1px solid #4f4f4f;
+        padding: 10px 20px;
+        border-radius: 6px;
+        .sub-left {
+          font-size: 12px;
+          font-weight: 700;
+          color: #bdbdbd;
+          font-family: $fontFamily;
+        }
+        .sub-right {
+          font-size: 12px;
+          color: $whiteColor;
+          font-family: $fontFamily;
+        }
+      }
+    }
+
+    .weight-field {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid #4f4f4f;
+    }
+
+    .seconds-field {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid #4f4f4f;
+    }
+
+    .distance-field {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid #4f4f4f;
+    }
+  }
+
+  .rest-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    p {
+      font-family: $fontFamily;
+      color: #bdbdbd;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .rest-one-content {
+      display: flex;
+      width: 90%;
+      border: 1px solid #4f4f4f;
+      padding: 10px 20px;
+      justify-content: space-between;
+      border-radius: 6px;
+      @media screen and (max-width: 540px) {
+        width: 88%;
+      }
+      .rest-one-content-left {
+        p {
+          font-family: $fontFamily;
+          color: #bdbdbd;
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+      .rest-one-content-right {
+        p {
+          font-family: $fontFamily;
+          color: $whiteColor;
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .exercise-details-btn-back {
+    display: flex;
+    justify-content: end;
+    margin-top: 0.7rem;
+    .back-btn {
+      background-color: $thirdColor;
+      border: none;
+      padding: 10px 50px;
+      border-radius: 6px;
+      color: $whiteColor;
+      font-weight: 500;
+      font-family: $fontFamily;
+      font-size: 12px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  .exercise-video-iframe {
+    margin-bottom: 20px;
+  }
+}

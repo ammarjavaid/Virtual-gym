@@ -1,0 +1,220 @@
+@import "../../../general_style/variable";
+
+.tabs {
+  background-color: $secndaryColor;
+  padding: 14px 20px;
+  border-radius: 7px;
+  margin-top: 2rem;
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    li {
+      color: #e0e0e0;
+      font-weight: 700;
+      font-family: $fontFamily;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .active {
+      color: $greenColor;
+      border-bottom: 2px solid $greenColor;
+      font-weight: 700;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.account__settings {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+
+  .form-left {
+    width: fit-content;
+    position: relative;
+    height: 100px;
+    width: 100px;
+
+    .icon {
+      position: absolute;
+      width: 25px !important;
+      height: 25px !important;
+      bottom: -2px;
+      bottom: -9px;
+      right: -24px !important;
+      border-radius: 6px;
+      cursor: pointer;
+      padding: 8px;
+      // background-color: red;
+      background-color: $bgColor;
+      @media screen and (max-width: 768px) {
+        right: 0rem;
+      }
+    }
+    input {
+      display: none;
+    }
+    label {
+      display: block;
+      cursor: pointer;
+      text-align: center;
+      font-weight: 500;
+      color: red;
+      .selected-img {
+        width: 120px;
+        height: 120px;
+        margin-left: 30px;
+      }
+    }
+    .image-upload-button {
+      height: 90px;
+      width: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      color: var(--bg-color);
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .inputs {
+    width: 53%;
+    margin-top: 1rem;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    .box {
+      margin-top: 0.6rem;
+      input {
+        padding: 0px 15px;
+        height: 40px;
+        background-color: $secndaryColor;
+        border: none;
+        border-radius: 6px;
+        width: 100%;
+        color: $whiteColor;
+        font-family: $fontFamily;
+        font-size: 11px;
+        &::placeholder {
+          color: #bdbdbd;
+          font-family: $fontFamily;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+
+      input:disabled {
+        background-color: $primaryColor;
+        padding: 0px 15px;
+        height: 40px;
+        border-radius: 6px;
+        color: $whiteColor;
+        font-family: $fontFamily;
+        font-size: 11px;
+      }
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      justify-content: end;
+      gap: 2rem;
+      p {
+        color: $thirdColor;
+        font-family: $fontFamily;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      .update {
+        background-color: $thirdColor;
+        height: 36px;
+        border: none;
+        padding: 0 50px;
+        border-radius: 10px;
+        color: $whiteColor;
+        font-family: $fontFamily;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.activity__log {
+  .today {
+    margin-top: 2rem;
+    h1 {
+      color: $whiteColor;
+      font-size: 16px;
+      font-weight: 400;
+      padding-bottom: 0.5rem;
+    }
+    .today_box {
+      background-color: $primaryColor;
+      padding: 20px;
+      border-radius: 6px;
+      .single_log {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(145, 155, 171, 0.1);
+        &:nth-child(3) {
+          border-bottom: none;
+        }
+        p {
+          font-family: $fontFamily;
+          font-weight: 400;
+          color: $whiteColor;
+          font-size: 11px;
+        }
+        img {
+          width: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.ant-pagination {
+  background-color: $secndaryColor !important;
+  padding: 8px 10px !important;
+  border-radius: 8px !important;
+  width: 100% !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 2rem !important;
+  .ant-pagination-options {
+    float: right !important;
+  }
+  .ant-pagination-item-link {
+    color: $whiteColor !important;
+  }
+  .ant-pagination-prev .ant-pagination-disabled {
+    cursor: not-allowed !important;
+  }
+  .ant-pagination-item-active {
+    background: transparent !important;
+    border: none !important;
+    a {
+      color: $thirdColor !important;
+      font-weight: 300 !important;
+    }
+  }
+  .ant-pagination-item {
+    a {
+      color: $whiteColor;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../general_style/variable";
+@import "../../general_style/mixin";
+
+.login {
+  background-color: $thirdColor;
+  height: 45px;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  color: $whiteColor;
+  cursor: pointer;
+}

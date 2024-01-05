@@ -1,0 +1,88 @@
+@import "../../../general_style/variable";
+
+.adminLogin {
+  width: 97%;
+  max-width: 1600px;
+  margin-top: 1rem !important;
+  margin: auto;
+
+  .form {
+    width: 40%;
+    margin-top: 10% !important;
+    margin: auto;
+    @media screen and (max-width: 768px) {
+      width: 80%;
+      margin-top: 14% !important;
+    }
+    @media screen and (max-width: 540px) {
+      width: 90%;
+      margin-top: 11.5rem !important;
+    }
+    h3 {
+      text-align: center;
+      color: $whiteColor;
+      font-weight: 400;
+      padding-bottom: 1rem;
+      font-size: 26px;
+    }
+
+    .ant-input-affix-wrapper {
+      height: 50px !important;
+      background-color: $secndaryColor !important;
+      border: none !important;
+      box-shadow: none !important;
+      color: #bdbdbd !important;
+      border-radius: 13px !important;
+      padding: 0 2px !important;
+      &::placeholder {
+        color: #bdbdbd !important;
+        font-family: "Ubuntu";
+      }
+      .anticon.ant-input-password-icon {
+        color: #bdbdbd !important;
+      }
+    }
+    .ant-input {
+      background: $secndaryColor !important;
+      color: #bdbdbd !important;
+      border-radius: 13px !important;
+      padding: 0 18px !important;
+      &::placeholder {
+        color: #bdbdbd !important;
+      }
+      .ant-input:focus {
+        background-color: red !important;
+        border-color: #40a9ff !important;
+      }
+    }
+
+    .anticon svg {
+      margin-right: 16px !important;
+    }
+    .ant-form-item {
+      margin-bottom: 10px !important;
+    }
+    p {
+      color: $whiteColor;
+      text-align: right;
+      font-family: $fontFamily;
+      font-weight: 500;
+      margin-bottom: 3rem;
+      color: $thirdColor;
+      cursor: pointer;
+      width: fit-content;
+      margin-left: auto;
+    }
+    .login {
+      background-color: $thirdColor;
+      height: 45px;
+      border: none;
+      width: 100%;
+      border-radius: 10px;
+      color: $whiteColor;
+      cursor: pointer;
+      margin-top: 1rem;
+      font-family: $fontFamily;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+@import "../../../general_style/variable";
+
+.team-member-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-left: 0;
+  }
+  .team-member-details-name {
+    background-color: $secndaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid #4f4f4f;
+    background: transparent;
+    .team-member-details-name-left {
+      font-family: $fontFamily;
+      color: #bdbdbd;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .team-member-details-name-right {
+      font-family: $fontFamily;
+      font-size: 13px;
+      color: $whiteColor;
+    }
+  }
+  .team-member-details-email {
+    background-color: $secndaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid #4f4f4f;
+    background: transparent;
+    .team-member-details-name-left {
+      font-family: $fontFamily;
+      color: #bdbdbd;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .team-member-details-name-right {
+      font-family: $fontFamily;
+      font-size: 13px;
+      color: $whiteColor;
+    }
+  }
+  .team-member-details-password {
+    background-color: $secndaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid #4f4f4f;
+    background: transparent;
+    .team-member-details-name-left {
+      font-family: $fontFamily;
+      color: #bdbdbd;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .team-member-details-name-right {
+      font-family: $fontFamily;
+      font-size: 13px;
+      color: $whiteColor;
+    }
+  }
+  .team-member-details-role {
+    background-color: $secndaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid #4f4f4f;
+    background: transparent;
+    .team-member-details-name-left {
+      font-family: $fontFamily;
+      color: #bdbdbd;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .team-member-details-name-right {
+      font-family: $fontFamily;
+      font-size: 13px;
+      color: $whiteColor;
+    }
+  }
+  .team-member-details-description {
+    background-color: $secndaryColor;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid #4f4f4f;
+    background: transparent;
+    .team-member-details-name-left {
+      font-family: $fontFamily;
+      color: #bdbdbd;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .team-member-details-name-right {
+      font-family: $fontFamily;
+      font-size: 12px;
+      color: $whiteColor;
+      line-height: 17px;
+    }
+  }
+
+  .team-member-details-btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+    .contact-back-btn {
+      background-color: $thirdColor;
+      font-family: $fontFamily;
+      color: $whiteColor;
+      padding: 10px 50px;
+      font-size: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      width: fit-content;
+    }
+  }
+}

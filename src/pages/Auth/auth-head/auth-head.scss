@@ -1,0 +1,14 @@
+@import "../../../general_style/variable";
+
+.auth-head {
+  background-color: $primaryColor;
+  border-radius: 10px;
+  h1 {
+    color: $whiteColor;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 26px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}

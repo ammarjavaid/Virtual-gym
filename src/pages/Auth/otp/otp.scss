@@ -1,0 +1,14 @@
+.ant-input-affix-wrapper input[type="number"]::-webkit-inner-spin-button,
+.ant-input-affix-wrapper input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+.ant-input-affix-wrapper input[type="number"] {
+  -moz-appearance: textfield !important;
+}
+
+.reset-button {
+  &:hover {
+    color: white !important;
+  }
+}

@@ -1,0 +1,87 @@
+@import "../../../general_style/variable";
+
+.gallery-videos-details {
+  width: 50%;
+  margin-bottom: 2rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  img {
+    margin: 20px 0;
+  }
+  .gallery-videos-details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .gallery-video-name {
+      background-color: $secndaryColor;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid #4f4f4f;
+      background: transparent;
+      .gallery-video-name-left {
+        font-family: $fontFamily;
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .gallery-video-name-right {
+        font-family: $fontFamily;
+        font-size: 13px;
+        color: $whiteColor;
+      }
+    }
+    .gallery-videos-category {
+      background-color: $secndaryColor;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid #4f4f4f;
+      background: transparent;
+      .gallery-video-name-left {
+        font-family: $fontFamily;
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .gallery-video-name-right {
+        font-family: $fontFamily;
+        font-size: 13px;
+        color: $whiteColor;
+      }
+    }
+    .gallery-videos-description {
+      background-color: $secndaryColor;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid #4f4f4f;
+      background: transparent;
+      .gallery-video-name-left {
+        font-family: $fontFamily;
+        color: #bdbdbd;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .gallery-video-name-right {
+        margin-top: 10px;
+        font-family: $fontFamily;
+        font-size: 13px;
+        color: $whiteColor;
+      }
+    }
+  }
+
+  .exercise-video-iframe {
+    margin-bottom: 20px;
+  }
+}
